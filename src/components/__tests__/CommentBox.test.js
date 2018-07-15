@@ -20,10 +20,10 @@ afterEach(() => {
     wrapper.unmount();
 });
 
-it('has a text are and button',() => {
+it('has a text are and two buttons',() => {
     //const wrapper = mount(<CommentBox />);
     expect(wrapper.find('textarea').length).toEqual(1);
-    expect(wrapper.find('button').length).toEqual(1);
+    expect(wrapper.find('button').length).toEqual(2);
 });
 
 it('User may change value of textarea',() => {
